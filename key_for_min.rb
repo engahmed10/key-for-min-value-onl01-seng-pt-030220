@@ -15,7 +15,7 @@ def key_for_min_value(name_hash)
    if min <= arr[c]
         min=min
    else
-     min= arr[c]
+        min= arr[c]
    end
    c +=1
  end
