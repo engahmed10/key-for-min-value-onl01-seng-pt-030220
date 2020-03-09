@@ -8,17 +8,14 @@ def key_for_min_value(name_hash)
   arr=name_hash.collect do |key,value|
      value
   end
-
 #find minimum
  c=1
  min=arr[0]
- while c < arr.length-1
-   if (min <= arr[c] && arr[c+1] >= min)
-            min=min
-   elsif (min > arr[c] && arr[c] < arr[c+1])
-     min=  arr[c]
+ while c < arr.length
+   if min <= arr[c]
+        min=min
    else
-     min=arr[c+1]
+     min= arr[c]
    end
    c +=1
  end
